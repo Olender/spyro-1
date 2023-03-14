@@ -22,7 +22,7 @@ model["mesh"] = {
     "truemodel": "velocity_models/marmousi_pml.hdf5",
 }
 model["BCs"] = {
-    "status": False,  # True or false
+    "status": True,  # True or false
     "outer_bc": "non-reflective",  # None or non-reflective (outer boundary condition)
     "damping_type": "polynomial",  # polynomial, hyperbolic, shifted_hyperbolic
     "exponent": 2,  # damping layer has a exponent variation
