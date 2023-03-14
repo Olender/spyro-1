@@ -17,9 +17,9 @@ model["mesh"] = {
     "Lz": 3.5,  # depth in km - always positive
     "Lx": 17.0,  # width in km - always positive
     "Ly": 0.0,  # thickness in km - always positive
-    "meshfile": "meshes/marmousi_pml.msh",
+    "meshfile": "meshes/marmousi_with_pml.msh",
     "initmodel": None,
-    "truemodel": "velocity_models/marmousi_pml.hdf5",
+    "truemodel": "velocity_models/marmousi_with_pml.hdf5",
 }
 model["BCs"] = {
     "status": True,  # True or false
