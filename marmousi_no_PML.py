@@ -64,6 +64,6 @@ wavelet = spyro.full_ricker_wavelet(
 )
 p, p_r = spyro.solvers.forward(model, mesh, comm, vp, sources, wavelet, receivers)
 tf = time.time()
-print(f"Total simulation time = {tf-t0}")
+print(f"Total simulation time = {tf-t0}", flush=True)
 spyro.plots.plot_shots(model, comm, p_r, vmin=-1e-3, vmax=1e-3)
 spyro.io.save_shots(model, comm, p_r)
