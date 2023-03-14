@@ -1,0 +1,100 @@
+
+## Job started at 14-03-2023 as 18:58:24 #####################
+
+
+## Jobs activated by olender: 
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             23537 intel_lar get_dofs  olender  R       0:01      1 n07
+
+## Execution node:         n07 
+
+
+## Number of tasks per job: 40 
+
+
+## Diretorio de submissao do job:   /home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1 
+
+INFO: Distributing 40 shot(s) across 40 core(s). Each shot is using 1 cores
+  rank 0 on ensemble 11 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 24 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 26 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 29 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 30 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 34 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 1 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 14 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 22 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 23 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 25 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 27 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 33 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 38 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 2 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 20 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 31 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 4 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 5 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 6 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 7 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 12 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 15 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 16 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 17 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 21 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 32 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 35 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 39 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 18 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 28 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 37 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 0 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 10 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 13 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 36 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 3 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 8 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 19 owns 6125 elements and can access 3210 vertices
+  rank 0 on ensemble 9 owns 6125 elements and can access 3210 vertices
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+Dofs count = 67962 with PML
+
+## Job finished on 14-03-2023 as 18:58:45 ###################

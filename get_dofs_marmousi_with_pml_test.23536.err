@@ -1,0 +1,800 @@
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[20] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[20] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[20] Unable to open file
+[20] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 20
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[32] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[32] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[32] Unable to open file
+[32] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 32
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 1] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 1] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 1] Unable to open file
+[ 1] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 1
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 4] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 4] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 4] Unable to open file
+[ 4] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 4
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[22] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[22] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[22] Unable to open file
+[22] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 22
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 2] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 2] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 2] Unable to open file
+[ 2] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 2
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 5] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 5] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 5] Unable to open file
+[ 5] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 5
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 8] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 8] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 8] Unable to open file
+[ 8] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 8
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[12] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[12] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[12] Unable to open file
+[12] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 12
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[16] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[16] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[16] Unable to open file
+[16] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 16
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[17] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[17] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[17] Unable to open file
+[17] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 17
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[25] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[25] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[25] Unable to open file
+[25] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 25
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[31] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[31] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[31] Unable to open file
+[31] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 31
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[34] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[34] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[34] Unable to open file
+[34] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 34
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 0] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 0] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 0] Unable to open file
+[ 0] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 6] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 6] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 6] Unable to open file
+[ 6] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 6
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 9] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 9] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 9] Unable to open file
+[ 9] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 9
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[10] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[10] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[10] Unable to open file
+[10] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 10
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[11] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[11] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[11] Unable to open file
+[11] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 11
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[14] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[14] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[14] Unable to open file
+[14] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 14
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[15] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[15] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[15] Unable to open file
+[15] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 15
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[19] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[19] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[19] Unable to open file
+[19] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 19
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[21] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[21] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[21] Unable to open file
+[21] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 21
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[23] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[23] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[23] Unable to open file
+[23] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 23
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[24] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[24] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[24] Unable to open file
+[24] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 24
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[26] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[26] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[26] Unable to open file
+[26] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 26
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[27] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[27] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[27] Unable to open file
+[27] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 27
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[28] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[28] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[28] Unable to open file
+[28] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 28
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[29] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[29] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[29] Unable to open file
+[29] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 29
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[30] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[30] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[30] Unable to open file
+[30] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 30
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[33] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[33] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[33] Unable to open file
+[33] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 33
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[35] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[35] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[35] Unable to open file
+[35] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 35
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[36] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[36] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[36] Unable to open file
+[36] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 36
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[37] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[37] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[37] Unable to open file
+[37] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 37
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[38] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[38] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[38] Unable to open file
+[38] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 38
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[39] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[39] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[39] Unable to open file
+[39] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 39
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 3] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 3] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 3] Unable to open file
+[ 3] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 3
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 7] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 7] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 7] Unable to open file
+[ 7] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 7
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[13] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[13] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[13] Unable to open file
+[13] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 13
+Traceback (most recent call last):
+  File "get_dofs_marmousi_yes_PML.py", line 52, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[18] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[18] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[18] Unable to open file
+[18] Cannot open PetscViewer file: meshes/marmousi_pml.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 18

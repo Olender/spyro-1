@@ -1,0 +1,27 @@
+
+## Job started at 14-03-2023 as 18:44:53 #####################
+
+
+## Jobs activated by olender: 
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             23533 intel_lar meshing_  olender  R       0:00      1 n08
+             23532 intel_lar marmousi  olender  R       4:58      1 n07
+
+## Execution node:         n08 
+
+
+## Number of tasks per job: 1 
+
+
+## Diretorio de submissao do job:   /home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1 
+
+Entering mesh generation
+Converting from km-s to m-s...
+Mesh sizes will be built to resolve an estimate of wavelength of a 5.0 hz wavelet with 2.67 vertices...
+Enforcing minimum edge length of 107.04119850187267
+Enforcing maximum edge length of 10000.0
+Enforcing mesh size gradation of 0.15 decimal percent...
+entering spatial rank 0 after mesh generation
+
+## Job finished on 14-03-2023 as 18:45:47 ###################
