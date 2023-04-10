@@ -75,6 +75,6 @@ wavelet = spyro.full_ricker_wavelet(
     tf=model["timeaxis"]["tf"],
     freq=model["acquisition"]["frequency"],
 )
-p, p_r = spyro.solvers.forward(model, mesh, comm, vp, sources, wavelet, receivers, output=True)
+p, p_r = spyro.solvers.forward_ssprk(model, mesh, comm, vp, sources, wavelet, receivers, output=True)
 spyro.plots.plot_shots(model, comm, p_r, vmin=-1e-3, vmax=1e-3)
 

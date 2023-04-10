@@ -58,12 +58,10 @@ def forward(
 
     method = model["opts"]["method"]
     degree = model["opts"]["degree"]
-    dim = model["opts"]["dimension"]
     dt = model["timeaxis"]["dt"]
     tf = model["timeaxis"]["tf"]
     nspool = model["timeaxis"]["nspool"]
     fspool = model["timeaxis"]["fspool"]
-    PML = model["BCs"]["status"]
     excitations.current_source = source_num
 
     nt = int(tf / dt)  # number of timesteps
@@ -83,20 +81,16 @@ def forward(
     else:
         raise ValueError("method is not yet supported")
 
+
     element = space.FE_method(mesh, method, degree)
-
     V = FunctionSpace(mesh, element)
+    qr_x, _, _ = quadrature.quadrature_rules(V)
 
-    qr_x, qr_s, _ = quadrature.quadrature_rules(V)
+    W =  V* V
+    dwdt_trial, dpdt_trial = TrialFunctions(W)
+    q1, q2 = TestFunctions(W)
 
-    if dim == 2:
-        z, x = SpatialCoordinate(mesh)
-    elif dim == 3:
-        z, x, y = SpatialCoordinate(mesh)
-
-  
-
-    # typical CG FEM in 2d/3d
+    w_n, p_n= Function(W).split()
 
     u = TrialFunction(V)
     v = TestFunction(V)
