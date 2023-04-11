@@ -1,0 +1,41 @@
+
+## Job started at 22-03-2023 as 10:15:00 #####################
+
+
+## Jobs activated by olender: 
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             23648 intel_lar overthur  olender  R       0:00      1 n06
+
+## Execution node:         n06 
+
+
+## Number of tasks per job: 20 
+
+
+## Diretorio de submissao do job:   /home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1 
+
+  rank 0 on ensemble 15 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 16 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 4 owns 207524 elements and can access 39108 vertices
+INFO: Distributing 20 shot(s) across 20 core(s). Each shot is using 1 cores
+  rank 0 on ensemble 0 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 10 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 3 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 13 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 9 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 2 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 11 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 5 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 18 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 12 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 6 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 7 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 19 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 1 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 8 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 14 owns 207524 elements and can access 39108 vertices
+  rank 0 on ensemble 17 owns 207524 elements and can access 39108 vertices
+INFO: converting from m/s to km/s
+
+## Job finished on 22-03-2023 as 10:19:46 ###################

@@ -28,23 +28,23 @@ model["opts"] = {
 }
 model["parallelism"] = {"type": "automatic"}  # automatic",
 model["mesh"] = {
-    "Lz": 5.175,  # depth in km - always positive
-    "Lx": 7.50,  # width in km - always positive
-    "Ly": 7.50,  # thickness in km - always positive
-    "meshfile": "/home/olender/common_files/meshes/overthrust_3D_true_model.msh",
+    "Lz": 4.140,  # depth in km - always positive
+    "Lx": 6.0,  # width in km - always positive
+    "Ly": 6.0,  # thickness in km - always positive
+    "meshfile": "meshes/overthrust_3D_exact_model_reduced_no_pmlv1.msh",
     "initmodel": None,
-    "truemodel": "/home/olender/common_files/velocity_models/overthrust_3D_true_model.hdf5",
+    "truemodel": "velocity_models/overthrust_3D_exact_model_reduced_v5_no_pml.hdf5",
 }
 model["BCs"] = {
-    "status": True,  # True or false
+    "status": False,  # True or false
     "outer_bc": "non-reflective",  # None or non-reflective (outer boundary condition)
     "damping_type": "polynomial",  # polynomial, hyperbolic, shifted_hyperbolic
     "exponent": 2,  # damping layer has a exponent variation
     "cmax": 6.0,  # maximum acoustic wave velocity in PML - km/s
     "R": 1e-6,  # theoretical reflection coefficient
-    "lz": 0.75,  # thickness of the PML in the z-direction (km) - always positive
-    "lx": 0.75,  # thickness of the PML in the x-direction (km) - always positive
-    "ly": 0.75,  # thickness of the PML in the y-direction (km) - always positive
+    "lz": 0.,  # thickness of the PML in the z-direction (km) - always positive
+    "lx": 0.,  # thickness of the PML in the x-direction (km) - always positive
+    "ly": 0.,  # thickness of the PML in the y-direction (km) - always positive
 }
 model["acquisition"] = {
     "source_type": "Ricker",

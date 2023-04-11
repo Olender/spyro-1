@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pml.py", line 69, in <module>
+    parprint(f"Dofs count = {V.dim()} with PML for overthrust")
+NameError: name 'parprint' is not defined
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 28

@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
+#SBATCH --nodes=3
+#SBATCH --ntasks-per-node=20
 #SBATCH --partition=intel_large
-#SBATCH --time=15:00:00
-#SBATCH --job-name=meshing_2d_habc
+#SBATCH --time=1-24:00:00
+#SBATCH --job-name=overthurst_with_pml_3_nodes
 #SBATCH --output=%x.%j.out
 #SBATCH --error=%x.%j.err
 #SBATCH --exclusive
@@ -22,6 +22,7 @@ echo -e "\n## Number of tasks per job: $SLURM_NTASKS \n"
 ##gCreate a file to store hostname allocated
 export HOSTFILE=$SLURM_SUBMIT_DIR/host-$SLURM_JOBID
 module purge
+
 module load gnu8/8.3.0
 module load libtool-2.4.6-gcc-8.3.0-r7ax6ye
 module load flex-2.6.4-gcc-8.3.0-fscrodi
@@ -41,17 +42,21 @@ module load git-2.25.0-intel-20.0.166-sqqkrvq
 
 module load python-3.6.8-gcc-8.3.0-ak4nasp
 
-#. /home/public/app/firedrake_gnu/firedrake/bin/activate
-#. /home/public/app/firedrake_gnu_032021/firedrake/bin/activate
-#. /home/public/app/firedrake_gnu_042021/firedrake/bin/activate
-module load firedrake/20220516
+. /home/public/app/firedrake_gnu_042022/firedrake/bin/activate
 
+export FIREDRAKE_CACHE_DIR=~/tmp_amd7
+export PYOP2_CACHE_DIR=~/tmp_amd7
+export FIREDRAKE_TSFC_KERNEL_CACHE_DIR=~/tmp_amd7
+
+export OPENBLAS_NUM_THREADS=1
+export GOTO_NUM_THREADS=1
+export OMP_NUM_THREADS=1
 
 srun hostname > $HOSTFILE
 ## Information about the entry and exit of the job
 echo -e "\n## Diretorio de submissao do job:   $SLURM_SUBMIT_DIR \n"
 
-mpiexec -n 1  python mesh_generation_2d_layer_fake_habc.py 5.0
+mpiexec -n 60 python overthrust_with_pml.py
 
 echo -e "\n## Job finished on $(date +'%d-%m-%Y as %T') ###################"
 rm $HOSTFILE

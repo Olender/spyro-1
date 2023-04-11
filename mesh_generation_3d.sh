@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
+#SBATCH --ntasks-per-node=20
 #SBATCH --partition=intel_large
 #SBATCH --time=15:00:00
-#SBATCH --job-name=meshing_2d_habc
+#SBATCH --job-name=meshing_3d_with_pml
 #SBATCH --output=%x.%j.out
 #SBATCH --error=%x.%j.err
 #SBATCH --exclusive
@@ -51,7 +51,7 @@ srun hostname > $HOSTFILE
 ## Information about the entry and exit of the job
 echo -e "\n## Diretorio de submissao do job:   $SLURM_SUBMIT_DIR \n"
 
-mpiexec -n 1  python mesh_generation_2d_layer_fake_habc.py 5.0
+mpiexec -n 20 python mesh_generation_overthrust_with_pml.py
 
 echo -e "\n## Job finished on $(date +'%d-%m-%Y as %T') ###################"
 rm $HOSTFILE

@@ -1,0 +1,328 @@
+
+## Job started at 22-03-2023 as 09:51:57 #####################
+
+
+## Jobs activated by olender: 
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             23641 intel_lar meshing4  olender  R       0:01      1 n06
+
+## Execution node:         n06 
+
+
+## Number of tasks per job: 5 
+
+
+## Diretorio de submissao do job:   /home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1 
+
+100.0
+Reading binary file: overthrust_3D_exact_model_reduced_v5.bin
+Mesh sizes will be built to resolve an estimate of wavelength of a 5.0 hz wavelet with 3.0 vertices...
+Enforcing minimum edge length of 100.0
+Enforcing maximum edge length of 300
+Enforcing mesh size gradation of 0.35 decimal percent...
+Including a 750.0 meter domain extension...
+Using the pad_style: edge
+Reading binary file: overthrust_3D_exact_model_reduced_v5.bin
+Adding a domain pad to the velocity model...
+Including a 750.0 meter domain extension...
+Using the pad_style: edge
+Writing velocity model: overthrust_3D_exact_model_reduced_v5.hdf5
+Constraining 0 fixed points..
+Commencing mesh generation with 8016 vertices on rank 0.
+100.0
+Commencing mesh generation with 7812 vertices on rank 2.
+100.0
+Commencing mesh generation with 7486 vertices on rank 1.
+100.0
+Commencing mesh generation with 7860 vertices on rank 4.
+100.0
+Commencing mesh generation with 8082 vertices on rank 3.
+Iteration #1, max movement is 436.780796, there are 8016 vertices and 62595 cells
+     Elapsed wall-clock time 0.223944 : 
+Iteration #2, max movement is 241.704276, there are 8016 vertices and 61486 cells
+     Elapsed wall-clock time 0.337800 : 
+Iteration #3, max movement is 161.048090, there are 8016 vertices and 61274 cells
+     Elapsed wall-clock time 0.324320 : 
+Iteration #4, max movement is 147.924504, there are 8016 vertices and 61571 cells
+     Elapsed wall-clock time 0.323489 : 
+Iteration #5, max movement is 147.859224, there are 8016 vertices and 61614 cells
+     Elapsed wall-clock time 0.289754 : 
+Iteration #6, max movement is 151.509340, there are 8016 vertices and 61735 cells
+     Elapsed wall-clock time 0.332781 : 
+Iteration #7, max movement is 130.477575, there are 8016 vertices and 61555 cells
+     Elapsed wall-clock time 0.251541 : 
+Iteration #8, max movement is 141.768495, there are 8016 vertices and 61499 cells
+     Elapsed wall-clock time 0.285878 : 
+Iteration #9, max movement is 122.953613, there are 8016 vertices and 61175 cells
+     Elapsed wall-clock time 0.284630 : 
+Iteration #10, max movement is 141.430974, there are 8016 vertices and 60948 cells
+     Elapsed wall-clock time 0.284377 : 
+Iteration #11, max movement is 122.762121, there are 8016 vertices and 60587 cells
+     Elapsed wall-clock time 0.285645 : 
+Iteration #12, max movement is 139.919333, there are 8016 vertices and 60329 cells
+     Elapsed wall-clock time 0.281294 : 
+Iteration #13, max movement is 135.939020, there are 8016 vertices and 60140 cells
+     Elapsed wall-clock time 0.282367 : 
+Iteration #14, max movement is 134.787226, there are 8016 vertices and 59782 cells
+     Elapsed wall-clock time 0.281971 : 
+Iteration #15, max movement is 134.247577, there are 8016 vertices and 59669 cells
+     Elapsed wall-clock time 0.276730 : 
+Iteration #16, max movement is 134.110453, there are 8016 vertices and 59470 cells
+     Elapsed wall-clock time 0.285222 : 
+Iteration #17, max movement is 137.792929, there are 8016 vertices and 59263 cells
+     Elapsed wall-clock time 0.349385 : 
+Iteration #18, max movement is 127.967700, there are 8016 vertices and 59065 cells
+     Elapsed wall-clock time 0.207771 : 
+Iteration #19, max movement is 135.861450, there are 8016 vertices and 58905 cells
+     Elapsed wall-clock time 0.275878 : 
+Iteration #20, max movement is 122.695909, there are 8016 vertices and 58760 cells
+     Elapsed wall-clock time 0.271186 : 
+Iteration #21, max movement is 129.137729, there are 8016 vertices and 58656 cells
+     Elapsed wall-clock time 0.347574 : 
+Iteration #22, max movement is 120.228253, there are 8016 vertices and 58506 cells
+     Elapsed wall-clock time 0.208520 : 
+Iteration #23, max movement is 128.090507, there are 8016 vertices and 58452 cells
+     Elapsed wall-clock time 0.273320 : 
+Iteration #24, max movement is 118.644053, there are 8016 vertices and 58335 cells
+     Elapsed wall-clock time 0.272720 : 
+Iteration #25, max movement is 130.932855, there are 8016 vertices and 58200 cells
+     Elapsed wall-clock time 0.276001 : 
+Iteration #26, max movement is 118.761146, there are 8016 vertices and 58084 cells
+     Elapsed wall-clock time 0.271928 : 
+Iteration #27, max movement is 130.002499, there are 8016 vertices and 58044 cells
+     Elapsed wall-clock time 0.273729 : 
+Iteration #28, max movement is 117.848256, there are 8016 vertices and 57983 cells
+     Elapsed wall-clock time 0.268257 : 
+Iteration #29, max movement is 127.900660, there are 8016 vertices and 57851 cells
+     Elapsed wall-clock time 0.272676 : 
+Iteration #30, max movement is 116.285137, there are 8016 vertices and 57793 cells
+     Elapsed wall-clock time 0.275884 : 
+Iteration #31, max movement is 124.761015, there are 8016 vertices and 57763 cells
+     Elapsed wall-clock time 0.273198 : 
+Iteration #32, max movement is 115.089618, there are 8016 vertices and 57708 cells
+     Elapsed wall-clock time 0.363155 : 
+Iteration #33, max movement is 126.559714, there are 8016 vertices and 57669 cells
+     Elapsed wall-clock time 0.280108 : 
+Iteration #34, max movement is 112.191780, there are 8016 vertices and 57562 cells
+     Elapsed wall-clock time 0.277941 : 
+Iteration #35, max movement is 108.483009, there are 8016 vertices and 57528 cells
+     Elapsed wall-clock time 0.279060 : 
+Iteration #36, max movement is 111.763419, there are 8016 vertices and 57447 cells
+     Elapsed wall-clock time 0.279661 : 
+Iteration #37, max movement is 133.311662, there are 8016 vertices and 57441 cells
+     Elapsed wall-clock time 0.284482 : 
+Iteration #38, max movement is 109.738408, there are 8016 vertices and 57328 cells
+     Elapsed wall-clock time 0.269616 : 
+Iteration #39, max movement is 136.788916, there are 8016 vertices and 57435 cells
+     Elapsed wall-clock time 0.267345 : 
+Iteration #40, max movement is 112.609133, there are 8016 vertices and 57352 cells
+     Elapsed wall-clock time 0.266755 : 
+Iteration #41, max movement is 119.070005, there are 8016 vertices and 57303 cells
+     Elapsed wall-clock time 0.264920 : 
+Iteration #42, max movement is 103.417687, there are 8016 vertices and 57324 cells
+     Elapsed wall-clock time 0.267213 : 
+Iteration #43, max movement is 118.710049, there are 8016 vertices and 57365 cells
+     Elapsed wall-clock time 0.266004 : 
+Iteration #44, max movement is 113.521613, there are 8016 vertices and 57278 cells
+     Elapsed wall-clock time 0.265518 : 
+Iteration #45, max movement is 126.713346, there are 8016 vertices and 57287 cells
+     Elapsed wall-clock time 0.266303 : 
+Iteration #46, max movement is 100.477968, there are 8016 vertices and 57264 cells
+     Elapsed wall-clock time 0.316288 : 
+Iteration #47, max movement is 148.155611, there are 8016 vertices and 57329 cells
+     Elapsed wall-clock time 0.213564 : 
+Iteration #48, max movement is 110.079108, there are 8016 vertices and 57226 cells
+     Elapsed wall-clock time 0.261849 : 
+Iteration #49, max movement is 127.245049, there are 8016 vertices and 57203 cells
+     Elapsed wall-clock time 0.273295 : 
+Iteration #50, max movement is 104.141413, there are 8016 vertices and 57191 cells
+     Elapsed wall-clock time 0.267503 : 
+Iteration #51, max movement is 148.040897, there are 8016 vertices and 57152 cells
+     Elapsed wall-clock time 0.266368 : 
+Iteration #52, max movement is 104.609529, there are 8016 vertices and 57181 cells
+     Elapsed wall-clock time 0.266930 : 
+Iteration #53, max movement is 146.673360, there are 8016 vertices and 57181 cells
+     Elapsed wall-clock time 0.267557 : 
+Iteration #54, max movement is 105.852537, there are 8016 vertices and 57165 cells
+     Elapsed wall-clock time 0.266534 : 
+Iteration #55, max movement is 144.411011, there are 8016 vertices and 57215 cells
+     Elapsed wall-clock time 0.273358 : 
+Iteration #56, max movement is 104.525509, there are 8016 vertices and 57148 cells
+     Elapsed wall-clock time 0.266573 : 
+Iteration #57, max movement is 141.444520, there are 8016 vertices and 57125 cells
+     Elapsed wall-clock time 0.266946 : 
+Iteration #58, max movement is 101.883888, there are 8016 vertices and 57187 cells
+     Elapsed wall-clock time 0.265741 : 
+Iteration #59, max movement is 131.426508, there are 8016 vertices and 57151 cells
+     Elapsed wall-clock time 0.266682 : 
+Iteration #60, max movement is 105.220559, there are 8016 vertices and 57144 cells
+     Elapsed wall-clock time 0.268460 : 
+Iteration #61, max movement is 134.006759, there are 8016 vertices and 57129 cells
+     Elapsed wall-clock time 0.316593 : 
+Iteration #62, max movement is 103.327749, there are 8016 vertices and 57208 cells
+     Elapsed wall-clock time 0.215551 : 
+Iteration #63, max movement is 130.527882, there are 8016 vertices and 57183 cells
+     Elapsed wall-clock time 0.289863 : 
+Iteration #64, max movement is 105.325226, there are 8016 vertices and 57195 cells
+     Elapsed wall-clock time 0.245131 : 
+Iteration #65, max movement is 122.645379, there are 8016 vertices and 57174 cells
+     Elapsed wall-clock time 0.265707 : 
+Iteration #66, max movement is 108.502255, there are 8016 vertices and 57178 cells
+     Elapsed wall-clock time 0.265463 : 
+Iteration #67, max movement is 130.518226, there are 8016 vertices and 57161 cells
+     Elapsed wall-clock time 0.265414 : 
+Iteration #68, max movement is 115.365833, there are 8016 vertices and 57183 cells
+     Elapsed wall-clock time 0.265251 : 
+Iteration #69, max movement is 130.646103, there are 8016 vertices and 57211 cells
+     Elapsed wall-clock time 0.266027 : 
+Iteration #70, max movement is 115.236143, there are 8016 vertices and 57198 cells
+     Elapsed wall-clock time 0.267471 : 
+Iteration #71, max movement is 129.931150, there are 8016 vertices and 57159 cells
+     Elapsed wall-clock time 0.264627 : 
+Iteration #72, max movement is 114.236634, there are 8016 vertices and 57159 cells
+     Elapsed wall-clock time 0.265277 : 
+Iteration #73, max movement is 129.615794, there are 8016 vertices and 57156 cells
+     Elapsed wall-clock time 0.263776 : 
+Iteration #74, max movement is 107.754567, there are 8016 vertices and 57189 cells
+     Elapsed wall-clock time 0.265561 : 
+Iteration #75, max movement is 129.094164, there are 8016 vertices and 57124 cells
+     Elapsed wall-clock time 0.264936 : 
+Iteration #76, max movement is 104.590990, there are 8016 vertices and 57119 cells
+     Elapsed wall-clock time 0.340298 : 
+Iteration #77, max movement is 109.899535, there are 8016 vertices and 57140 cells
+     Elapsed wall-clock time 0.293045 : 
+Iteration #78, max movement is 103.389595, there are 8016 vertices and 57184 cells
+     Elapsed wall-clock time 0.273561 : 
+Iteration #79, max movement is 110.333344, there are 8016 vertices and 57142 cells
+     Elapsed wall-clock time 0.371892 : 
+Iteration #80, max movement is 102.602999, there are 8016 vertices and 57201 cells
+     Elapsed wall-clock time 0.267669 : 
+Iteration #81, max movement is 111.228301, there are 8016 vertices and 57207 cells
+     Elapsed wall-clock time 0.264683 : 
+Iteration #82, max movement is 113.547969, there are 8016 vertices and 57258 cells
+     Elapsed wall-clock time 0.264336 : 
+Iteration #83, max movement is 127.310949, there are 8016 vertices and 57185 cells
+     Elapsed wall-clock time 0.265081 : 
+Iteration #84, max movement is 114.005514, there are 8016 vertices and 57205 cells
+     Elapsed wall-clock time 0.265385 : 
+Iteration #85, max movement is 125.992778, there are 8016 vertices and 57192 cells
+     Elapsed wall-clock time 0.263968 : 
+Iteration #86, max movement is 114.510030, there are 8016 vertices and 57284 cells
+     Elapsed wall-clock time 0.265881 : 
+Iteration #87, max movement is 124.849815, there are 8016 vertices and 57161 cells
+     Elapsed wall-clock time 0.264705 : 
+Iteration #88, max movement is 114.556956, there are 8016 vertices and 57323 cells
+     Elapsed wall-clock time 0.265114 : 
+Iteration #89, max movement is 123.774413, there are 8016 vertices and 57152 cells
+     Elapsed wall-clock time 0.263884 : 
+Iteration #90, max movement is 105.139589, there are 8016 vertices and 57303 cells
+     Elapsed wall-clock time 0.265758 : 
+Iteration #91, max movement is 123.132472, there are 8016 vertices and 57223 cells
+     Elapsed wall-clock time 0.361756 : 
+Iteration #92, max movement is 104.022225, there are 8016 vertices and 57292 cells
+     Elapsed wall-clock time 0.271043 : 
+Iteration #93, max movement is 112.308870, there are 8016 vertices and 57202 cells
+     Elapsed wall-clock time 0.265977 : 
+Iteration #94, max movement is 114.245569, there are 8016 vertices and 57347 cells
+     Elapsed wall-clock time 0.368671 : 
+Iteration #95, max movement is 126.368831, there are 8016 vertices and 57201 cells
+     Elapsed wall-clock time 0.257795 : 
+Iteration #96, max movement is 116.213042, there are 8016 vertices and 57279 cells
+     Elapsed wall-clock time 0.265089 : 
+Iteration #97, max movement is 126.197630, there are 8016 vertices and 57216 cells
+     Elapsed wall-clock time 0.266616 : 
+Iteration #98, max movement is 114.140027, there are 8016 vertices and 57262 cells
+     Elapsed wall-clock time 0.264150 : 
+Iteration #99, max movement is 126.066583, there are 8016 vertices and 57222 cells
+     Elapsed wall-clock time 0.265588 : 
+Iteration #100, max movement is 112.996127, there are 8016 vertices and 57285 cells
+     Elapsed wall-clock time 0.264300 : 
+Iteration #101, max movement is 125.678235, there are 8016 vertices and 57181 cells
+     Elapsed wall-clock time 0.259345 : 
+Iteration #102, max movement is 111.417793, there are 8016 vertices and 57275 cells
+     Elapsed wall-clock time 0.261329 : 
+Iteration #103, max movement is 126.066855, there are 8016 vertices and 57243 cells
+     Elapsed wall-clock time 0.272393 : 
+Iteration #104, max movement is 106.433704, there are 8016 vertices and 57279 cells
+     Elapsed wall-clock time 0.315441 : 
+Iteration #105, max movement is 126.630099, there are 8016 vertices and 57271 cells
+     Elapsed wall-clock time 0.245784 : 
+Iteration #106, max movement is 108.558026, there are 8016 vertices and 57248 cells
+     Elapsed wall-clock time 0.251270 : 
+Iteration #107, max movement is 125.077586, there are 8016 vertices and 57254 cells
+     Elapsed wall-clock time 0.262042 : 
+Iteration #108, max movement is 107.082430, there are 8016 vertices and 57279 cells
+     Elapsed wall-clock time 0.262996 : 
+Iteration #109, max movement is 124.422722, there are 8016 vertices and 57229 cells
+     Elapsed wall-clock time 0.263290 : 
+Iteration #110, max movement is 107.381621, there are 8016 vertices and 57206 cells
+     Elapsed wall-clock time 0.261985 : 
+Iteration #111, max movement is 125.046445, there are 8016 vertices and 57251 cells
+     Elapsed wall-clock time 0.265659 : 
+Iteration #112, max movement is 107.114438, there are 8016 vertices and 57193 cells
+     Elapsed wall-clock time 0.256603 : 
+Iteration #113, max movement is 129.523091, there are 8016 vertices and 57263 cells
+     Elapsed wall-clock time 0.263095 : 
+Iteration #114, max movement is 109.731348, there are 8016 vertices and 57156 cells
+     Elapsed wall-clock time 0.265333 : 
+Iteration #115, max movement is 123.909097, there are 8016 vertices and 57214 cells
+     Elapsed wall-clock time 0.262053 : 
+Iteration #116, max movement is 105.930357, there are 8016 vertices and 57211 cells
+     Elapsed wall-clock time 0.261608 : 
+Iteration #117, max movement is 123.256755, there are 8016 vertices and 57203 cells
+     Elapsed wall-clock time 0.260941 : 
+Iteration #118, max movement is 104.793067, there are 8016 vertices and 57232 cells
+     Elapsed wall-clock time 0.263351 : 
+Iteration #119, max movement is 121.898241, there are 8016 vertices and 57188 cells
+     Elapsed wall-clock time 0.264772 : 
+Iteration #120, max movement is 110.276412, there are 8016 vertices and 57266 cells
+     Elapsed wall-clock time 0.287472 : 
+Iteration #121, max movement is 122.229067, there are 8016 vertices and 57211 cells
+     Elapsed wall-clock time 0.258808 : 
+Iteration #122, max movement is 105.725111, there are 8016 vertices and 57235 cells
+     Elapsed wall-clock time 0.264327 : 
+Iteration #123, max movement is 127.424908, there are 8016 vertices and 57231 cells
+     Elapsed wall-clock time 0.266441 : 
+Iteration #124, max movement is 106.913913, there are 8016 vertices and 57243 cells
+     Elapsed wall-clock time 0.264201 : 
+Iteration #125, max movement is 122.739155, there are 8016 vertices and 57212 cells
+     Elapsed wall-clock time 0.257697 : 
+Iteration #126, max movement is 106.785400, there are 8016 vertices and 57238 cells
+     Elapsed wall-clock time 0.264043 : 
+Iteration #127, max movement is 126.292441, there are 8016 vertices and 57232 cells
+     Elapsed wall-clock time 0.265499 : 
+Iteration #128, max movement is 103.716276, there are 8016 vertices and 57230 cells
+     Elapsed wall-clock time 0.264187 : 
+Iteration #129, max movement is 122.229671, there are 8016 vertices and 57219 cells
+     Elapsed wall-clock time 0.264301 : 
+Iteration #130, max movement is 107.261895, there are 8016 vertices and 57230 cells
+     Elapsed wall-clock time 0.264833 : 
+Iteration #131, max movement is 125.762727, there are 8016 vertices and 57241 cells
+     Elapsed wall-clock time 0.264213 : 
+Iteration #132, max movement is 103.963281, there are 8016 vertices and 57282 cells
+     Elapsed wall-clock time 0.266412 : 
+Iteration #133, max movement is 124.945212, there are 8016 vertices and 57251 cells
+     Elapsed wall-clock time 0.265318 : 
+Iteration #134, max movement is 101.923549, there are 8016 vertices and 57297 cells
+     Elapsed wall-clock time 0.265358 : 
+Iteration #135, max movement is 124.217384, there are 8016 vertices and 57264 cells
+     Elapsed wall-clock time 0.348482 : 
+Iteration #136, max movement is 107.351901, there are 8016 vertices and 57219 cells
+     Elapsed wall-clock time 0.276498 : 
+Iteration #137, max movement is 123.804500, there are 8016 vertices and 57264 cells
+     Elapsed wall-clock time 0.355057 : 
+Iteration #138, max movement is 112.061115, there are 8016 vertices and 57239 cells
+     Elapsed wall-clock time 0.268526 : 
+Iteration #139, max movement is 123.514688, there are 8016 vertices and 57332 cells
+     Elapsed wall-clock time 0.265587 : 
+Iteration #140, max movement is 107.372463, there are 8016 vertices and 57252 cells
+     Elapsed wall-clock time 0.268514 : 
+Iteration #141, max movement is 119.006965, there are 8016 vertices and 57304 cells
+     Elapsed wall-clock time 0.261493 : 
+Iteration #142, max movement is 112.208727, there are 8016 vertices and 57275 cells
+     Elapsed wall-clock time 0.272034 : 
+Iteration #143, max movement is 117.749590, there are 8016 vertices and 57344 cells
+     Elapsed wall-clock time 0.266740 : 
+Iteration #144, max movement is 115.067970, there are 8016 vertices and 57329 cells
+     Elapsed wall-clock time 0.257812 : 

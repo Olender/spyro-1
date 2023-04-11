@@ -3,6 +3,14 @@ from firedrake.petsc import PETSc
 import time
 import numpy as np
 import spyro
+import os
+import psutil
+
+def get_memory_usage():
+    """Return the memory usage in Mo."""
+    process = psutil.Process(os.getpid())
+    mem = process.memory_info()[0] / float(2**20)
+    return mem
 
 parprint = PETSc.Sys.Print
 
@@ -67,5 +75,22 @@ model["timeaxis"] = {
     "fspool": 99999,  # how frequently to save solution to RAM
 }
 comm = spyro.utils.mpi_init(model)
+t0 = time.time()
 mesh, V = spyro.io.read_mesh(model, comm)
-parprint(f"Dofs count = {V.dim()} with PML for overthrust")
+vp = spyro.io.interpolate(model, mesh, V, guess=False)
+if comm.ensemble_comm.rank == 0:
+    File("true_velocity.pvd", comm=comm.comm).write(vp)
+sources = spyro.Sources(model, mesh, V, comm)
+receivers = spyro.Receivers(model, mesh, V, comm)
+wavelet = spyro.full_ricker_wavelet(
+    dt=model["timeaxis"]["dt"],
+    tf=model["timeaxis"]["tf"],
+    freq=model["acquisition"]["frequency"],
+)
+p, p_r = spyro.solvers.forward(
+    model, mesh, comm, vp, sources, wavelet, receivers, output=False
+)
+tf = time.time()
+parprint(f"Total simulation time, for marmousi, without PML = {tf-t0}")
+parprint(f"Memory usage = {get_memory_usage()}")
+spyro.plots.plot_shots(model, comm, p_r, vmin=-1e-3, vmax=1e-3)

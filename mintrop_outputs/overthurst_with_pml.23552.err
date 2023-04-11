@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "overthrust_with_pml.py", line 81, in <module>
+    receivers = spyro.Receivers(model, mesh, V, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/receivers/Receivers.py", line 83, in __init__
+    if self.dimension == 3 and model["aut_dif"]["status"]:
+KeyError: 'aut_dif'
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 4
+Traceback (most recent call last):
+  File "overthrust_with_pml.py", line 81, in <module>
+    receivers = spyro.Receivers(model, mesh, V, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/receivers/Receivers.py", line 83, in __init__
+    if self.dimension == 3 and model["aut_dif"]["status"]:
+KeyError: 'aut_dif'
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 11
+rm: cannot remove ‘/home/olender/tmp_amd7/f5’: Directory not empty
+rm: cannot remove ‘/home/olender/tmp_amd7/e2/228043b6e42b63192d0299112be972.so’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/50/8e4b9ec36259895b8226d785ee4b5b.so’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/20/fb907a5a81cb9c51ef62beefd13e57.so’: Stale file handle

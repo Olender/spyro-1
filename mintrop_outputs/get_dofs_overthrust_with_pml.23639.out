@@ -1,0 +1,61 @@
+
+## Job started at 22-03-2023 as 09:46:33 #####################
+
+
+## Jobs activated by olender: 
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             23639 intel_lar get_dofs  olender  R       0:00      1 n06
+
+## Execution node:         n06 
+
+
+## Number of tasks per job: 40 
+
+
+## Diretorio de submissao do job:   /home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1 
+
+  rank 0 on ensemble 3 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 3 owns 103758 elements and can access 20082 vertices
+  rank 1 on ensemble 14 owns 103758 elements and can access 20082 vertices
+  rank 0 on ensemble 14 owns 103759 elements and can access 20041 vertices
+  rank 0 on ensemble 16 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 16 owns 103758 elements and can access 20082 vertices
+  rank 1 on ensemble 13 owns 103758 elements and can access 20082 vertices
+  rank 0 on ensemble 13 owns 103759 elements and can access 20041 vertices
+  rank 0 on ensemble 1 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 1 owns 103758 elements and can access 20082 vertices
+  rank 1 on ensemble 4 owns 103758 elements and can access 20082 vertices
+  rank 0 on ensemble 4 owns 103759 elements and can access 20041 vertices
+  rank 0 on ensemble 9 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 18 owns 103758 elements and can access 20082 vertices
+  rank 0 on ensemble 18 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 9 owns 103758 elements and can access 20082 vertices
+  rank 0 on ensemble 12 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 12 owns 103758 elements and can access 20082 vertices
+  rank 1 on ensemble 6 owns 103758 elements and can access 20082 vertices
+  rank 0 on ensemble 6 owns 103759 elements and can access 20041 vertices
+  rank 0 on ensemble 5 owns 103759 elements and can access 20041 vertices
+  rank 0 on ensemble 2 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 5 owns 103758 elements and can access 20082 vertices
+  rank 1 on ensemble 2 owns 103758 elements and can access 20082 vertices
+  rank 1 on ensemble 10 owns 103758 elements and can access 20082 vertices
+  rank 0 on ensemble 10 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 0 owns 103758 elements and can access 20082 vertices
+INFO: Distributing 20 shot(s) across 40 core(s). Each shot is using 2 cores
+  rank 0 on ensemble 0 owns 103759 elements and can access 20041 vertices
+  rank 0 on ensemble 11 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 11 owns 103758 elements and can access 20082 vertices
+  rank 0 on ensemble 15 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 15 owns 103758 elements and can access 20082 vertices
+  rank 1 on ensemble 19 owns 103758 elements and can access 20082 vertices
+  rank 0 on ensemble 19 owns 103759 elements and can access 20041 vertices
+  rank 0 on ensemble 17 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 17 owns 103758 elements and can access 20082 vertices
+  rank 1 on ensemble 8 owns 103758 elements and can access 20082 vertices
+  rank 0 on ensemble 8 owns 103759 elements and can access 20041 vertices
+  rank 0 on ensemble 7 owns 103759 elements and can access 20041 vertices
+  rank 1 on ensemble 7 owns 103758 elements and can access 20082 vertices
+Dofs count = 2653255 with PML for overthrust
+
+## Job finished on 22-03-2023 as 09:47:17 ###################

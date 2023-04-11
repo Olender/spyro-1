@@ -1,0 +1,400 @@
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 4] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 4] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 4] Unable to open file
+[ 4] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 4
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[34] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[34] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[34] Unable to open file
+[34] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 34
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 8] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 8] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 8] Unable to open file
+[ 8] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 8
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[12] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[12] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[12] Unable to open file
+[12] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 12
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[22] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[22] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[22] Unable to open file
+[22] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 22
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[26] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[26] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[26] Unable to open file
+[26] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 26
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 2] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 2] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 2] Unable to open file
+[ 2] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 2
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 6] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 6] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 6] Unable to open file
+[ 6] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 6
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[10] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[10] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[10] Unable to open file
+[10] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 10
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[14] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[14] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[14] Unable to open file
+[14] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 14
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[20] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[20] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[20] Unable to open file
+[20] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 20
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[28] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[28] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[28] Unable to open file
+[28] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 28
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[30] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[30] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[30] Unable to open file
+[30] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 30
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[32] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[32] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[32] Unable to open file
+[32] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 32
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[38] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[38] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[38] Unable to open file
+[38] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 38
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[ 0] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[ 0] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[ 0] Unable to open file
+[ 0] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[16] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[16] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[16] Unable to open file
+[16] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 16
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[18] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[18] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[18] Unable to open file
+[18] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 18
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[24] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[24] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[24] Unable to open file
+[24] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 24
+Traceback (most recent call last):
+  File "get_dofs_overthrust_yes_pmlv2.py", line 70, in <module>
+    mesh, V = spyro.io.read_mesh(model, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 415, in read_mesh
+    mesh = fire.Mesh(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 1941, in Mesh
+    plex = _from_gmsh(meshfile, comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/mesh.py", line 230, in _from_gmsh
+    gmsh_viewer.setFileName(filename)
+  File "PETSc/Viewer.pyx", line 342, in petsc4py.PETSc.Viewer.setFileName
+petsc4py.PETSc.Error: error code 65
+[36] PetscViewerFileSetName() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:649
+[36] PetscViewerFileSetName_ASCII() at /home/public/app/firedrake_gnu_042022/firedrake/src/petsc/src/sys/classes/viewer/impls/ascii/filev.c:753
+[36] Unable to open file
+[36] Cannot open PetscViewer file: /home/olender/common_files/meshes/overthrust_3D_exact_model_reduced_v6.msh
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 36

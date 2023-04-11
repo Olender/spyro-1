@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "mesh_overthrust_3d_exact_model_reduced.py", line 123, in <module>
+    print(f"Minimum dihedral angle is {np.amin(dh_angles)}")
+  File "<__array_function__ internals>", line 180, in amin
+  File "/home/public/app/firedrake_gnu_042022/firedrake/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2916, in amin
+    return _wrapreduction(a, np.minimum, 'min', axis, None, out,
+  File "/home/public/app/firedrake_gnu_042022/firedrake/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation minimum which has no identity
+Traceback (most recent call last):
+  File "mesh_overthrust_3d_exact_model_reduced.py", line 123, in <module>
+    print(f"Minimum dihedral angle is {np.amin(dh_angles)}")
+  File "<__array_function__ internals>", line 180, in amin
+  File "/home/public/app/firedrake_gnu_042022/firedrake/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2916, in amin
+    return _wrapreduction(a, np.minimum, 'min', axis, None, out,
+  File "/home/public/app/firedrake_gnu_042022/firedrake/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation minimum which has no identity
+Traceback (most recent call last):
+  File "mesh_overthrust_3d_exact_model_reduced.py", line 123, in <module>
+    print(f"Minimum dihedral angle is {np.amin(dh_angles)}")
+  File "<__array_function__ internals>", line 180, in amin
+  File "/home/public/app/firedrake_gnu_042022/firedrake/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2916, in amin
+    return _wrapreduction(a, np.minimum, 'min', axis, None, out,
+  File "/home/public/app/firedrake_gnu_042022/firedrake/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation minimum which has no identity
+Traceback (most recent call last):
+  File "mesh_overthrust_3d_exact_model_reduced.py", line 123, in <module>
+    print(f"Minimum dihedral angle is {np.amin(dh_angles)}")
+  File "<__array_function__ internals>", line 180, in amin
+  File "/home/public/app/firedrake_gnu_042022/firedrake/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 2916, in amin
+    return _wrapreduction(a, np.minimum, 'min', axis, None, out,
+  File "/home/public/app/firedrake_gnu_042022/firedrake/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+ValueError: zero-size array to reduction operation minimum which has no identity
+Warning: Appending zeros to replace the missing physical tag data.
+Warning: Appending zeros to replace the missing geometrical tag data.

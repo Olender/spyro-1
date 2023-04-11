@@ -1,0 +1,48 @@
+
+## Job started at 22-03-2023 as 10:02:55 #####################
+
+
+## Jobs activated by olender: 
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             23644 intel_lar meshing4  olender  R       0:00      1 n06
+
+## Execution node:         n06 
+
+
+## Number of tasks per job: 5 
+
+
+## Diretorio de submissao do job:   /home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1 
+
+100.0
+Reading binary file: overthrust_3D_exact_model_reduced_v5.bin
+Mesh sizes will be built to resolve an estimate of wavelength of a 5.0 hz wavelet with 3.0 vertices...
+Enforcing minimum edge length of 100.0
+Enforcing maximum edge length of 300
+Enforcing mesh size gradation of 0.35 decimal percent...
+Reading binary file: overthrust_3D_exact_model_reduced_v5.bin
+Writing velocity model: overthrust_3D_exact_model_reduced_v5_no_pml.hdf5
+Constraining 0 fixed points..
+Commencing mesh generation with 5336 vertices on rank 0.
+100.0
+Commencing mesh generation with 5004 vertices on rank 1.
+100.0
+Commencing mesh generation with 5110 vertices on rank 4.
+100.0
+Commencing mesh generation with 5153 vertices on rank 2.
+100.0
+Commencing mesh generation with 5298 vertices on rank 3.
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 47364 RUNNING AT n06
+=   EXIT CODE: 6
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Terminated (signal 15)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+
+## Job finished on 22-03-2023 as 10:03:07 ###################

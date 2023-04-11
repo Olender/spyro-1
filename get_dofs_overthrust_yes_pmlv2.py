@@ -28,12 +28,12 @@ model["opts"] = {
 }
 model["parallelism"] = {"type": "automatic"}  # automatic",
 model["mesh"] = {
-    "Lz": 5.175,  # depth in km - always positive
-    "Lx": 7.50,  # width in km - always positive
-    "Ly": 7.50,  # thickness in km - always positive
-    "meshfile": "/home/olender/common_files/meshes/overthrust_3D_true_model.msh",
+    "Lz": 4.140,  # depth in km - always positive
+    "Lx": 6.0,  # width in km - always positive
+    "Ly": 6.0,  # thickness in km - always positive
+    "meshfile": "meshes/overthrust_3D_exact_model_reduced_v8.msh",
     "initmodel": None,
-    "truemodel": "/home/olender/common_files/velocity_models/overthrust_3D_true_model.hdf5",
+    "truemodel": "velocity_models/overthrust_3D_exact_model_reduced_v5.hdf5",
 }
 model["BCs"] = {
     "status": True,  # True or false

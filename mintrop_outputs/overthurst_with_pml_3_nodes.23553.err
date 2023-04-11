@@ -1,0 +1,69 @@
+Traceback (most recent call last):
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/interpolation.py", line 115, in interpolate
+    assembled_interpolator = self.frozen_assembled_interpolator
+AttributeError: 'Interpolator' object has no attribute 'frozen_assembled_interpolator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/PyOP2/pyop2/global_kernel.py", line 288, in __call__
+    func = self._func_cache[key]
+KeyError: 47034282765264
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/PyOP2/pyop2/compilation.py", line 368, in get_so
+    return ctypes.CDLL(soname)
+  File "/opt/spack/opt/spack/linux-centos7-x86_64/gcc-8.3.0/python-3.8.11-fq4lolmvzcgu5zm25rnbnzsdghdkc55v/lib/python3.8/ctypes/__init__.py", line 373, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /home/olender/tmp_amd7/1c/ed7ee3a9bbf17af25f26f82210cfb5.so: cannot open shared object file: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "overthrust_with_pml.py", line 90, in <module>
+    p, p_r = spyro.solvers.forward(
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 101, in wrapper
+    u, u_r = func(*args, **dict(kwargs, source_num=snum))
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/solvers/forward.py", line 147, in forward
+    sigma_x, sigma_y, sigma_z = damping.functions(
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/pml/damping.py", line 60, in functions
+    aux1.interpolate(
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/function.py", line 368, in interpolate
+    return interpolation.interpolate(expression, self, subset=subset, ad_block_tag=ad_block_tag)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/interpolation.py", line 61, in interpolate
+    return Interpolator(expr, V, subset=subset, access=access).interpolate(ad_block_tag=ad_block_tag)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/adjoint/interpolate.py", line 22, in wrapper
+    output = interpolate(interpolator, *function, **kwargs)
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/interpolation.py", line 118, in interpolate
+    assembled_interpolator = self.callable()
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/interpolation.py", line 222, in callable
+    l()
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/PyOP2/pyop2/parloop.py", line 201, in compute
+    self()
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/PyOP2/pyop2/parloop.py", line 210, in __call__
+    self._compute(self.iterset.core_part)
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/PyOP2/pyop2/parloop.py", line 192, in _compute
+    self.global_kernel(self.comm, part.offset, part.offset+part.size, *self.arglist)
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/PyOP2/pyop2/global_kernel.py", line 290, in __call__
+    func = self.compile(comm)
+  File "PETSc/Log.pyx", line 115, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "PETSc/Log.pyx", line 116, in petsc4py.PETSc.Log.EventDecorator.decorator.wrapped_func
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/PyOP2/pyop2/global_kernel.py", line 360, in compile
+    return compilation.load(self, extension, self.name,
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/PyOP2/pyop2/compilation.py", line 634, in load
+    dll = compiler(cppargs, ldargs, cpp=cpp, comm=comm).get_so(code, extension)
+  File "/home/public/app/firedrake_gnu_042022/firedrake/src/PyOP2/pyop2/compilation.py", line 444, in get_so
+    os.rename(tmpname, soname)
+OSError: [Errno 16] Device or resource busy: '/home/olender/tmp_amd7/1c/ed7ee3a9bbf17af25f26f82210cfb5_p72260.so.tmp' -> '/home/olender/tmp_amd7/1c/ed7ee3a9bbf17af25f26f82210cfb5.so'
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 15
+rm: cannot remove ‘/home/olender/tmp_amd7’: Directory not empty

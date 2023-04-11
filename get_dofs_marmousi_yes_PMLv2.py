@@ -1,18 +1,5 @@
 from firedrake import File
-from firedrake.petsc import PETSc
 import spyro
-import time
-import os
-import psutil
-
-def get_memory_usage():
-    """Return the memory usage in Mo."""
-    process = psutil.Process(os.getpid())
-    mem = process.memory_info()[0] / float(2**20)
-    return mem
-
-parprint = PETSc.Sys.Print
-
 
 model = {}
 
@@ -29,19 +16,19 @@ model["mesh"] = {
     "Lz": 3.5,  # depth in km - always positive
     "Lx": 17.0,  # width in km - always positive
     "Ly": 0.0,  # thickness in km - always positive
-    "meshfile": "meshes/marmousi_no_pml.msh",
+    "meshfile": "meshes/marmousi_with_pml.msh",
     "initmodel": None,
     "truemodel": "velocity_models/marmousi_with_pml.hdf5",
 }
 model["BCs"] = {
-    "status": False,  # True or false
+    "status": True,  # True or false
     "outer_bc": "non-reflective",  # None or non-reflective (outer boundary condition)
     "damping_type": "polynomial",  # polynomial, hyperbolic, shifted_hyperbolic
     "exponent": 2,  # damping layer has a exponent variation
     "cmax": 4.5,  # maximum acoustic wave velocity in PML - km/s
     "R": 1e-6,  # theoretical reflection coefficient
-    "lz": 0.0,  # thickness of the PML in the z-direction (km) - always positive
-    "lx": 0.0,  # thickness of the PML in the x-direction (km) - always positive
+    "lz": 0.9,  # thickness of the PML in the z-direction (km) - always positive
+    "lx": 0.9,  # thickness of the PML in the x-direction (km) - always positive
     "ly": 0.0,  # thickness of the PML in the y-direction (km) - always positive
 }
 model["acquisition"] = {
@@ -62,21 +49,5 @@ model["timeaxis"] = {
     "fspool": 99999,  # how frequently to save solution to RAM
 }
 comm = spyro.utils.mpi_init(model)
-t0 = time.time()
 mesh, V = spyro.io.read_mesh(model, comm)
-vp = spyro.io.interpolate(model, mesh, V, guess=False)
-if comm.ensemble_comm.rank == 0:
-    File("true_velocity.pvd", comm=comm.comm).write(vp)
-sources = spyro.Sources(model, mesh, V, comm)
-receivers = spyro.Receivers(model, mesh, V, comm)
-wavelet = spyro.full_ricker_wavelet(
-    dt=model["timeaxis"]["dt"],
-    tf=model["timeaxis"]["tf"],
-    freq=model["acquisition"]["frequency"],
-)
-p, p_r = spyro.solvers.forward(model, mesh, comm, vp, sources, wavelet, receivers)
-tf = time.time()
-parprint(f"Total simulation time, for marmousi, without PML = {tf-t0}")
-parprint(f"Memory usage = {get_memory_usage()}")
-spyro.plots.plot_shots(model, comm, p_r, vmin=-1e-3, vmax=1e-3)
-spyro.io.save_shots(model, comm, p_r)
+print(f"Dofs count = {V.dim()} with PML")

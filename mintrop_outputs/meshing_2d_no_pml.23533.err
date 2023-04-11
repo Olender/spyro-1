@@ -1,0 +1,6 @@
+/home/public/app/firedrake_gnu_042022/firedrake/lib/python3.8/site-packages/SeismicMesh/sizing/mesh_size_function.py:611: UserWarning: Velocity appear to be in km/s. Maybe pass `units` km-s key pair?
+  warnings.warn(
+Warning: Appending zeros to replace the missing physical tag data.
+Warning: Appending zeros to replace the missing geometrical tag data.
+Warning: VTK requires 3D points, but 2D points given. Appending 0 third 
+component.

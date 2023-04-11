@@ -1,0 +1,19 @@
+
+## Job started at 22-03-2023 as 09:45:39 #####################
+
+
+## Jobs activated by olender: 
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             23638 intel_lar get_dofs  olender  R       0:01      1 n06
+
+## Execution node:         n06 
+
+
+## Number of tasks per job: 40 
+
+
+## Diretorio de submissao do job:   /home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1 
+
+
+## Job finished on 22-03-2023 as 09:45:55 ###################

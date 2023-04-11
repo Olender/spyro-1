@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "overthrust_with_pml.py", line 81, in <module>
+    receivers = spyro.Receivers(model, mesh, V, comm)
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/receivers/Receivers.py", line 83, in __init__
+    if self.dimension == 3 and model["aut_dif"]["status"]:
+KeyError: 'aut_dif'
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 26
+rm: cannot remove ‘/home/olender/tmp_amd7/f5’: Directory not empty
+rm: cannot remove ‘/home/olender/tmp_amd7/6b/033baa8b2b0da81cee031205643bce.so’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/47/d2a0eb743b5703aba8fb7d1f71b4a7.so’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/07/cf66c91acafb2357683e355c12e505.so’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/aa/3e86851c6fa509d3bdf8899b3fe2b0_p82634.c’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/aa/3e86851c6fa509d3bdf8899b3fe2b0_p104812.log’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/aa/3e86851c6fa509d3bdf8899b3fe2b0_p104812.err’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/aa/3e86851c6fa509d3bdf8899b3fe2b0_p69403.log’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/aa/3e86851c6fa509d3bdf8899b3fe2b0_p69403.err’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/aa/3e86851c6fa509d3bdf8899b3fe2b0_p82634.log’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/aa/3e86851c6fa509d3bdf8899b3fe2b0_p82634.err’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/aa/3e86851c6fa509d3bdf8899b3fe2b0_p148888.c’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/aa/3e86851c6fa509d3bdf8899b3fe2b0.so’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/aa/3e86851c6fa509d3bdf8899b3fe2b0_p148888.log’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/aa/3e86851c6fa509d3bdf8899b3fe2b0_p148888.err’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/dc/acd25565f2df3e75c8c80d48026b14_p148888.c’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/dc/acd25565f2df3e75c8c80d48026b14_p148888.log’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/dc/acd25565f2df3e75c8c80d48026b14_p148888.err’: Stale file handle
+rm: cannot remove ‘/home/olender/tmp_amd7/dc/acd25565f2df3e75c8c80d48026b14.so’: Stale file handle

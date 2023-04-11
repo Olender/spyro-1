@@ -1,0 +1,42 @@
+
+## Job started at 15-03-2023 as 14:23:31 #####################
+
+
+## Jobs activated by olender: 
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             23552 intel_lar overthur  olender  R       0:01      1 n09
+             23551 intel_lar overthur  olender  R       0:04      3 n[06-08]
+
+## Execution node:         n09 
+
+
+## Number of tasks per job: 20 
+
+
+## Diretorio de submissao do job:   /home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1 
+
+  rank 14 on ensemble 0 owns 21820 elements and can access 4455 vertices
+  rank 1 on ensemble 0 owns 21820 elements and can access 4450 vertices
+  rank 3 on ensemble 0 owns 21821 elements and can access 4466 vertices
+  rank 11 on ensemble 0 owns 21821 elements and can access 4438 vertices
+  rank 17 on ensemble 0 owns 21820 elements and can access 4491 vertices
+  rank 18 on ensemble 0 owns 21820 elements and can access 4551 vertices
+  rank 4 on ensemble 0 owns 21820 elements and can access 4532 vertices
+  rank 6 on ensemble 0 owns 21821 elements and can access 4436 vertices
+  rank 8 on ensemble 0 owns 21820 elements and can access 4391 vertices
+  rank 10 on ensemble 0 owns 21820 elements and can access 4403 vertices
+  rank 16 on ensemble 0 owns 21820 elements and can access 4438 vertices
+  rank 13 on ensemble 0 owns 21820 elements and can access 4396 vertices
+  rank 19 on ensemble 0 owns 21820 elements and can access 4454 vertices
+INFO: Distributing 20 shot(s) across 20 core(s). Each shot is using 20 cores
+  rank 2 on ensemble 0 owns 21820 elements and can access 4413 vertices
+  rank 0 on ensemble 0 owns 21821 elements and can access 4450 vertices
+  rank 7 on ensemble 0 owns 21820 elements and can access 4451 vertices
+  rank 12 on ensemble 0 owns 21820 elements and can access 4465 vertices
+  rank 15 on ensemble 0 owns 21821 elements and can access 4620 vertices
+  rank 9 on ensemble 0 owns 21820 elements and can access 4442 vertices
+  rank 5 on ensemble 0 owns 21820 elements and can access 4462 vertices
+INFO: converting from m/s to km/s
+
+## Job finished on 15-03-2023 as 14:24:20 ###################

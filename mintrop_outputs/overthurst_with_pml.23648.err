@@ -1,0 +1,29 @@
+/home/public/app/firedrake_gnu_042022/firedrake/src/firedrake/firedrake/assemble.py:208: DeprecationWarning: create_assembly_callable is now deprecated. Please use assemble or FormAssembler instead.
+  warnings.warn("create_assembly_callable is now deprecated. Please use assemble or FormAssembler instead.",
+Traceback (most recent call last):
+  File "overthrust_with_pml_v2.py", line 90, in <module>
+    p, p_r = spyro.solvers.forward(
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/io/io.py", line 101, in wrapper
+    u, u_r = func(*args, **dict(kwargs, source_num=snum))
+  File "/home/olender/Thesis/chapter_acoustic_wave_fundamentals/spyro-1/spyro/solvers/forward.py", line 278, in forward
+    assert (
+AssertionError: Numerical instability. Try reducing dt or building the mesh differently
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 10
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs000000070047689900000329’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs000000070047557b00000323’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs00000007004759ae00000328’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs0000000700476ba000000330’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs000000070047557a00000325’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs000000070047557c00000324’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs000000070047557d00000326’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs000000070047689b0000032c’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs000000070047557f00000327’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs00000007004768b80000032a’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs00000007004768b20000032b’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs000000070047689a0000032d’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs00000007004768b10000032e’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/b0/.nfs00000007004768b90000032f’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/f5/.nfs0000000c00a14d00000001f7’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/f5/.nfs0000000c00a14d16000001f8’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/f5/.nfs0000000c00a14d03000001f9’: Device or resource busy
+rm: cannot remove ‘/home/olender/tmp_amd7/f5/.nfs0000000c00a14d15000001fa’: Device or resource busy
