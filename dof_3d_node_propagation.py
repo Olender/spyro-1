@@ -6,7 +6,7 @@ from spyro.io.model_parameters import Model_parameters
 import matplotlib.pyplot as plt
 import sys
 
-dt = 0.0005
+dt = 0.0001
 # dt = float(sys.argv[1])
 
 final_time = 1.0
@@ -79,7 +79,7 @@ Wave_obj.forward_solve()
 time = np.linspace(0.0, final_time, int(final_time/dt)+1)
 
 rec_out = Wave_obj.receivers_output
-np.save("dofs_3D_quads_rec_out"+str(dt)+".npy", rec_out)
+np.save("dofs_3D_0p5_quads_rec_out"+str(dt)+".npy", rec_out)
 
 plt.plot(time, Wave_obj.receivers_output)
 plt.show()
