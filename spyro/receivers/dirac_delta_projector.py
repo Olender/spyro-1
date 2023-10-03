@@ -305,15 +305,6 @@ class Delta_projector:
 
         return cell_tabulations
 
-    def __build_local_nodes(self):
-        """Builds local element nodes, locations and I,J,K numbering"""
-        if self.dimension == 2:
-            return self.__build_local_nodes_2D()
-        elif self.dimension == 3:
-            return self.__build_local_nodes_3D()
-        else:
-            raise ValueError
-
     def __func_node_locations(self):
         """Function that returns a list which includes a numpy matrix
         where line n has the x and y values of the nth degree of freedom,
