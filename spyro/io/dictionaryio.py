@@ -27,16 +27,16 @@ def parse_cg(dictionary):
     if "cell_type" not in dictionary:
         raise ValueError("cell_type must be specified for CG method.")
 
-    cell_type = parse_cell_type(dictionary)
+    cell_type = parse_cell_type(dictionary["cell_type"], optional_dictionary=dictionary)
     variant = parse_variant(dictionary)
     method = parse_method(cell_type, variant)
 
     return method, cell_type, variant
 
 
-def parse_cell_type(dictionary):
+def parse_cell_type(cell_type_str, optional_dictionary=None):
     """
-    Parse the cell type from the dictionary of a CG.
+    Parse the cell type
 
     Parameters
     ----------
@@ -49,31 +49,39 @@ def parse_cell_type(dictionary):
         The cell type to be used. Returns either triangle or quadrilateral.
     """
     cell_type = None
-    triangle_equivalents = ["T", "triangle", "triangles", "tetrahedra"]
+    triangle_equivalents = [
+        "T",
+        "triangle",
+        "triangles",
+        "tetrahedra",
+        "tetrahedron",
+    ]
     quadrilateral_equivalents = [
         "Q",
         "quadrilateral",
-        "quadrilaterals, hexahedra",
+        "quadrilaterals",
+        "hexahedra",
+        "hexahedron",
     ]
-    if dictionary["cell_type"] in triangle_equivalents:
+    if cell_type_str in triangle_equivalents:
         cell_type = "triangle"
-    elif dictionary["cell_type"] in quadrilateral_equivalents:
+    elif cell_type_str in quadrilateral_equivalents:
         cell_type = "quadrilateral"
-    elif dictionary["variant"] == "GLL":
+    elif optional_dictionary["variant"] == "GLL":
         cell_type = "quadrilateral"
         warnings.warn(
             "GLL variant only supported for quadrilateral meshes. Assuming quadrilateral."
         )
     else:
         raise ValueError(
-            f"cell_type of {dictionary['cell_type']} is not valid."
+            f"cell_type of {cell_type_str} is not valid."
         )
     return cell_type
 
 
 def parse_variant(dictionary):
     """
-    Parse the variant from the dictionary of a CG.
+    Parse the variant from the dictionary.
 
     Parameters
     ----------
@@ -106,7 +114,7 @@ def parse_variant(dictionary):
 
 def parse_method(cell_type, variant):
     """
-    Parse the method from the dictionary of a CG.
+    Parse the method.
 
     Parameters
     ----------
@@ -408,45 +416,15 @@ class read_options:
         return method, cell_type, variant
 
     def get_from_cell_type_variant(self):
-        triangle_equivalents = [
-            "T",
-            "triangle",
-            "triangles",
-            "tetrahedra",
-            "tetrahedron",
-        ]
-        quadrilateral_equivalents = [
-            "Q",
-            "quadrilateral",
-            "quadrilaterals",
-            "hexahedra",
-            "hexahedron",
-        ]
-        cell_type = self.options_dictionary["cell_type"]
-        if cell_type in triangle_equivalents:
-            cell_type = "triangle"
-        elif cell_type in quadrilateral_equivalents:
-            cell_type = "quadrilateral"
-        else:
-            raise ValueError(f"cell_type of {cell_type} is not valid.")
 
-        variant = self.options_dictionary["variant"]
-        accepted_variants = ["lumped", "equispaced", "DG"]
-        if variant not in accepted_variants:
-            raise ValueError(f"variant of {variant} is not valid.")
+        cell_type_str = self.options_dictionary["cell_type"]
+        cell_type = parse_cell_type(cell_type_str)
+        variant = parse_variant(self.options_dictionary)
 
-        if cell_type == "triangle" and variant == "lumped":
-            method = "mass_lumped_triangle"
-        elif cell_type == "triangle" and variant == "equispaced":
-            method = "CG_triangle"
-        elif cell_type == "triangle" and variant == "DG":
-            method = "DG_triangle"
-        elif cell_type == "quadrilateral" and variant == "lumped":
-            method = "spectral_quadrilateral"
-        elif cell_type == "quadrilateral" and variant == "equispaced":
-            method = "CG_quadrilateral"
-        elif cell_type == "quadrilateral" and variant == "DG":
-            method = "DG_quadrilateral"
+        if cell_type == "triangle":
+            method = _parse_method_triangle(cell_type, variant)
+        elif cell_type == "quadrilateral":
+            method = _parse_method_quadrilateral(cell_type, variant)
         else:
             raise ValueError(
                 f"cell_type of {cell_type} with variant of {variant} is not valid."
