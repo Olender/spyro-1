@@ -120,18 +120,72 @@ def parse_method(cell_type, variant):
     method : str
         The method to be used.
     """
-    if cell_type == "triangle" and variant == "lumped":
-        method = "mass_lumped_triangle"
-    elif cell_type == "triangle" and variant == "equispaced":
-        method = "CG_triangle"
-    elif cell_type == "triangle" and variant == "DG":
-        method = "DG_triangle"
+    if cell_type == "triangle":
+        method = _parse_method_triangle(cell_type, variant)
     elif cell_type == "quadrilateral" and variant == "lumped":
+        method = _parse_method_quadrilateral(cell_type, variant)
+    else:
+        raise ValueError(f"Cell type of {cell_type} with variant of {variant} results in a not implemented method")
+
+    return method
+
+
+def _parse_method_quadrilateral(cell_type, variant):
+    """
+    Parse the method for a quadrilateral.
+
+    Parameters
+    ----------
+    cell_type : str
+        The cell type to be used.
+    variant : str
+        The variant to be used.
+
+    Returns
+    -------
+    method : str
+        The method to be used.
+    """
+    if cell_type != "quadrilateral":
+        raise ValueError(f"Cell type of {cell_type} is not valid for a quadrilateral.")
+
+    if variant == "lumped":
         method = "spectral_quadrilateral"
-    elif cell_type == "quadrilateral" and variant == "equispaced":
+    elif variant == "equispaced":
         method = "CG_quadrilateral"
-    elif cell_type == "quadrilateral" and variant == "DG":
+    elif variant == "DG":
         method = "DG_quadrilateral"
+    else:
+        raise ValueError(f"Cell type of {cell_type} with variant of {variant} results in a not implemented method")
+
+    return method
+
+
+def _parse_method_triangle(cell_type, variant):
+    """
+    Parse the method for a triangle.
+
+    Parameters
+    ----------
+    cell_type : str
+        The cell type to be used.
+    variant : str
+        The variant to be used.
+
+    Returns
+    -------
+    method : str
+        The method to be used.
+    """
+    if cell_type != "triangle":
+        raise ValueError(f"Cell type of {cell_type} is not valid for a triangle.")
+
+    if variant == "lumped":
+        method = "mass_lumped_triangle"
+    elif variant == "equispaced":
+        method = "CG_triangle"
+    elif variant == "DG":
+        method = "DG_triangle"
     else:
         raise ValueError(f"Cell type of {cell_type} with variant of {variant} results in a not implemented method")
 
@@ -526,7 +580,6 @@ class read_mesh:
 
     def _derive_mesh_type(self):
         dictionary = self.mesh_dictionary
-        user_mesh_in_dictionary = False
         if "user_mesh" not in dictionary:
             dictionary["user_mesh"] = None
 
